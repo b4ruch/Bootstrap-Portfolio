@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- 
+***********************************************
+*Author: Baruch Flores                        *
+*Homework 2.1: Basic Portfolio with Bootstrap *
+*UCB Extension - Full-Stack Bootcamp          *
+*May 2018                                     *
+***********************************************
+-->
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bootstrap Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="nav_outer_container">
+        <div class="mx-auto w-75">
+            <nav class="navbar navbar-expand-md p-0">
+                <h1 class="name">Baruch Flores</h1>
+                <button class="navbar-toggler button_custom" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon icon_custom"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active nav_link_custom" href="index.html">About</a>
+                        <span class="nav-item nav-link separator">|</span>
+                        <a class="nav-item nav-link nav_link_custom" href="portfolio.html">Portfolio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <span class="nav-item nav-link separator">|</span>
+                        <a class="nav-item nav-link nav_link_custom" href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- <div class="container mx-auto w-75 mt-5 test"> -->
+    <div class="container mw-100 mx-auto mt-5 w-75 p-0">
+        <div class="row justify-content-between no-gutters">
+            <div class="col-12 col-md-8 bg-white px-4 column_content_custom">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="pt-5 mb-0">Portfolio</h1>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="mw-100 mh-100 mt-2 mx-auto mr-md-3 mb-3 mb-md-0 float-md-left project_div">
+                            <a href="#">
+                                <img class="img-fluid rounded project_image" src="assets/images/p1.jpg" alt="Project Hangman">
+                                <p class="mb-2 p-1 text-center w-100 project_title">Hangman</p>
+                            </a>
+                        </div>
+                        <div class="mw-100 mh-100 mt-2 mx-auto mr-md-3 mb-3 mb-md-0 float-md-left project_div">
+                            <a href="#">
+                                <img class="img-fluid rounded project_image" src="assets/images/p2.jpg" alt="RPG Game">
+                                <p class="mb-2 p-1 text-center w-100 project_title">RPG Game</p>
+                            </a>
+                        </div>
+                        <div class="mw-100 mh-100 mt-2 mx-auto mr-md-3 mb-3 mb-md-0 float-md-left project_div">
+                            <a href="#">
+                                <img class="img-fluid rounded project_image" src="assets/images/p3.jpg" alt="Trivia Game">
+                                <p class="mb-2 p-1 text-center w-100 project_title">Trivia Game</p>
+                            </a>
+                        </div>
+                        <div class="mw-100 mh-100 mt-2 mx-auto mr-md-3 mb-3 mb-md-0 float-md-left project_div">
+                            <a href="#">
+                                <img class="img-fluid rounded project_image" src="assets/images/p4.jpg" alt="Rutgers Info Widget">
+                                <p class="mb-2 p-1 text-center w-100 project_title">Rutgers Info Widget</p>
+                            </a>
+                        </div>
+                        <div class="mw-100 mh-100 mt-2 mx-auto mr-md-3 mb-3 mb-md-3 float-md-left project_div">
+                            <a href="#">
+                                <img class="img-fluid rounded project_image" src="assets/images/p5.jpg" alt="Rock Paper Scissors">
+                                <p class="mb-2 p-1 text-center w-100 project_title">Rock Paper Scissors</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-3 col-md-3 mt-md-0">
+                <div class="card px-4 py-3 bg-white card_custom">
+                    <h3 class="bg-white text-center mt-3 mb-0">Connect with me</h3>
+                    <hr class="my-3 h-2 hr_custom">
+                    <div class="card-body mt-1 p-0 pb-2 text-center">
+                        <a class="link_social" href="https://github.com/b4ruch">
+                            <img class="mt-1 img_social" src="assets/images/github.png" alt="GitHub"> </a>
+                        <a class="link_social" href="https://www.linkedin.com/in/ebaruch/">
+                            <img class="mt-1 img_social" src="assets/images/linkedin.jpg" alt="LinkedIn"> </a>
+                        <a class="link_social" href="https://stackoverflow.com/users/9727881/baruch?tab=profile">
+                            <img class="mt-1 img_social" src="assets/images/stackoverflow.png" alt="StackOverflow">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer w-100">
+        <p class="pt-4 pb-1 m-0 text-center copyright">Copyright ©</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

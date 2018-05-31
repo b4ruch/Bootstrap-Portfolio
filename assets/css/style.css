@@ -1,0 +1,152 @@
+/************************************************
+*Author: Baruch Flores                          *
+*Homework 2.1: Basic Portfolio with Bootstrap   *
+*UCB Extension - Full-Stack Bootcamp            *
+*May 2018                                       *
+*************************************************/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-image: url("../images/background.png");
+    color: #777;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 97px;
+}
+
+h1 {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    font-weight: Bold;
+}
+
+h3 {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-weight: Bold;
+}
+
+hr {
+    border: none;
+    background-color: #dddddd;
+    color: #dddddd;
+    height: 2.5px;
+    margin: 30px 0 30px 0;
+}
+
+.hr_custom {
+    height: 1px;
+}
+
+p {
+    line-height: 180%;
+}
+
+.project_title {
+    background-color: #4aaaa5;
+    color: #fff;
+    position: absolute;
+    bottom: -1px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav_outer_container {
+    background-color: #fff;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #ccc;
+    overflow: auto;
+}
+
+.column_content_custom, .card_custom {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddddd;
+}
+
+.name {
+    background-color: #4aaaa5;
+    color: #fff;
+    padding: 30px;
+    margin: 0;
+}
+
+.button_custom {
+    background-color: #4aaaa5;
+    border-color: #fff;
+}
+
+.icon_custom {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav_link_custom {
+    text-decoration-line: none;
+    color: #777;
+}
+
+.separator {
+    font-weight: 100;
+    color: #f3f3f3;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.about_me_img {
+    width: 200px;
+    height: 200px;
+}
+
+.project_div {
+    position: relative;
+    width: 220px;
+    height: 176px;
+}
+
+.project_image {
+    width: 220px;
+    height: 176px;
+}
+
+.button_submit_custom {
+    color: #fff;
+    background-color: #4aaaa5;
+    border-style: none;    
+}
+
+.link_social:hover {
+    text-decoration-line: none;
+}
+
+.img_social {
+    min-width: 60px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    border-top-style: solid;
+    border-top-color: #4aaaa5;
+    border-top-width: 8px;
+    background-color: #666666;
+}
+
+.copyright {
+    font-size: 12px;
+    color: #dddddd;
+}
+
+@media screen and (max-width:767.8px) {
+    .separator {
+        display: none;
+    }
+}
