@@ -120,7 +120,7 @@ a:hover {
 .button_submit_custom {
     color: #fff;
     background-color: #4aaaa5;
-    border-style: none;    
+    border-style: none;
 }
 
 .link_social:hover {
@@ -148,5 +148,8 @@ footer {
 @media screen and (max-width:767.8px) {
     .separator {
         display: none;
+    }
+    .form-group {
+        width: 100%!important;
     }
 }
