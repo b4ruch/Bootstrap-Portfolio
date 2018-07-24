@@ -11,21 +11,25 @@ html {
 }
 
 body {
-    background-image: url("../images/background.png");
+    /* background-image: url("../images/background.png"); */
+    /* background-color: #ffffff; */
+    background-image: linear-gradient(to bottom, #fdfbfb, #e3eef3);
+    /* background-image: radial-gradient(circle at bottom right, #342233, #ebedee); */
     color: #777;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 97px;
 }
 
 h1 {
-    color: #4aaaa5;
+    /* color: #4aaaa.5_; */
+    color: #0a97e9;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 28px;
     font-weight: Bold;
 }
 
 h3 {
-    color: #4aaaa5;
+    color: #0a97e9;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 22px;
     font-weight: Bold;
@@ -33,8 +37,7 @@ h3 {
 
 hr {
     border: none;
-    background-color: #dddddd;
-    color: #dddddd;
+    background-color: #0a97e9;
     height: 2.5px;
     margin: 30px 0 30px 0;
 }
@@ -48,7 +51,7 @@ p {
 }
 
 .project_title {
-    background-color: #4aaaa5;
+    background-color: #0a97e9;
     color: #fff;
     position: absolute;
     bottom: -1px;
@@ -57,28 +60,31 @@ p {
 }
 
 .nav_outer_container {
-    background-color: #fff;
+    /* background-color: #fff; */
+    /* background-color: #e2ebf0; */
     border-bottom-style: solid;
     border-bottom-width: 2px;
-    border-bottom-color: #ccc;
+    border-bottom-color: #0a97e9;
     overflow: auto;
 }
 
 .column_content_custom, .card_custom {
     border-style: solid;
     border-width: 1px;
-    border-color: #dddddd;
+    border-color: #0a97e9;
+    background-image: radial-gradient(circle farthest-side at top right, #fdfbfb, #ebedee);
+    border-radius: .25rem;
 }
 
 .name {
-    background-color: #4aaaa5;
+    background-color: #0a97e9;
     color: #fff;
     padding: 30px;
     margin: 0;
 }
 
 .button_custom {
-    background-color: #4aaaa5;
+    background-color: #0a97e9;
     border-color: #fff;
 }
 
@@ -93,7 +99,7 @@ p {
 
 .separator {
     font-weight: 100;
-    color: #f3f3f3;
+    color: #0a97e9;
 }
 
 a:hover {
@@ -119,7 +125,7 @@ a:hover {
 
 .button_submit_custom {
     color: #fff;
-    background-color: #4aaaa5;
+    background-color: #0a97e9;
     border-style: none;
 }
 
@@ -129,13 +135,14 @@ a:hover {
 
 .img_social {
     min-width: 60px;
+    width: 60px;
 }
 
 footer {
     position: absolute;
     bottom: 0;
     border-top-style: solid;
-    border-top-color: #4aaaa5;
+    border-top-color: #0a97e9;
     border-top-width: 8px;
     background-color: #666666;
 }
