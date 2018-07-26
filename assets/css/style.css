@@ -138,6 +138,20 @@ a:hover {
     width: 60px;
 }
 
+.project_info {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 3rem;
+}
+
+#projectDescription {
+    font-size: .9rem;
+    text-align: end;
+}
+
+.ico {
+    width: 3rem;
+}
+
 footer {
     position: absolute;
     bottom: 0;
