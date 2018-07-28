@@ -28,12 +28,12 @@ details.set("rps",
 
 
 let technologies = new Map();
-technologies.set("tickitNGo", ["html", "css", "javascript", "jQuery", "firebaseDb", "firebaseAu", "firebaseUi", "sweetAlert", "googleMaps", "fontAwesome"]);
+technologies.set("tickitNGo", ["html", "css", "javascript", "jQuery", "firebaseDB", "firebaseAu", "firebaseUi", "sweetAlert", "googleMaps", "fontAwesome"]);
 technologies.set("hangman", ["html", "css", "javascript"]);
 technologies.set("rpg", ["html", "css", "javascript", "jQuery"]);
 technologies.set("trivia", ["html", "css", "javascript", "jQuery", "fontAwesome"]);
 technologies.set("giftastic", ["html", "css", "javascript", "jQuery"]);
-technologies.set("rps", ["html", "css", "javascript", "jQuery", "firebaseDb"]);
+technologies.set("rps", ["html", "css", "javascript", "jQuery", "firebaseDB"]);
 
 let source = new Map();
 source.set("tickitNGo", ["https://github.com/Project1-Team3/Project1", "https://project1-team3.github.io/Project1/"]);
@@ -72,6 +72,7 @@ function printTechnologies(ele) {
     let tech = technologies.get(ele.attr("id"));
     tech.forEach(technology => {
         $("#projectTechnologies").append(icons.get(technology));
+        debugger;
     });
 }
 
