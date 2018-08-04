@@ -26,6 +26,11 @@ details.set("rps",
     "the game asynchronously. The app also features a chat where anyone (players and observers) can communicate in real time. " +
     "Google's Firebase and jQuery are the technologies used on this game. ");
 
+    details.set("liri",
+    "LIRI stands for Language Interpretation Recognition Interface.  This app is built on Node JS and provides a command line interface where the user can input " +
+    "commands to retrieve data of interest from different information sources. Currently LIRI supports Twitter, Spotify and IMDB. It also accepts a script file " +
+    "to read commands from. All program input and output is kept in a log file.");
+
 
 let technologies = new Map();
 technologies.set("tickitNGo", ["html", "css", "javascript", "jQuery", "firebaseDB", "firebaseAu", "firebaseUi", "sweetAlert", "googleMaps", "fontAwesome"]);
@@ -34,6 +39,8 @@ technologies.set("rpg", ["html", "css", "javascript", "jQuery"]);
 technologies.set("trivia", ["html", "css", "javascript", "jQuery", "fontAwesome"]);
 technologies.set("giftastic", ["html", "css", "javascript", "jQuery"]);
 technologies.set("rps", ["html", "css", "javascript", "jQuery", "firebaseDB"]);
+technologies.set("liri", ["nodeJs"]);
+
 
 let source = new Map();
 source.set("tickitNGo", ["https://github.com/Project1-Team3/Project1", "https://project1-team3.github.io/Project1/"]);
@@ -42,6 +49,7 @@ source.set("rpg", ["https://github.com/b4ruch/unit-4-game", "https://b4ruch.gith
 source.set("trivia", ["https://github.com/b4ruch/TriviaGame", "https://b4ruch.github.io/TriviaGame/"]);
 source.set("giftastic", ["https://github.com/b4ruch/GifTastic", "https://b4ruch.github.io/GifTastic/"]);
 source.set("rps", ["https://github.com/b4ruch/RPS-Multiplayer", "https://b4ruch.github.io/RPS-Multiplayer/"]);
+source.set("liri", ["https://github.com/b4ruch/liri-node-app", "https://github.com/b4ruch/liri-node-app"]);
 
 
 let icons = new Map();
@@ -55,6 +63,7 @@ icons.set("firebaseUi", "<img class='mt-1 ico' src='assets/images/firebaseUi.ico
 icons.set("sweetAlert", "<img class='mt-1 ico' src='assets/images/sweetAlert.png' alt='Sweet Alert 2' title='Sweet Alert 2'>");
 icons.set("googleMaps", "<img class='mt-1 ico' src='assets/images/googleMaps.png' alt='Google Maps' title='Google Maps'>");
 icons.set("fontAwesome", "<img class='mt-1 ico' src='assets/images/fontAwesome.png' alt='Font Awesome' title='Font Awesome'>");
+icons.set("nodeJs", "<img class='mt-1 ico' src='assets/images/nodeJs.png' alt='Node JS' title='Node JS'>");
 
 let projectInfoFlag = false; //toggles project info section just once
 
