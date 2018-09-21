@@ -26,11 +26,32 @@ details.set("rps",
     "the game asynchronously. The app also features a chat where anyone (players and observers) can communicate in real time. " +
     "Google's Firebase and jQuery are the technologies used on this game. ");
 
-    details.set("liri",
+details.set("liri",
     "LIRI stands for Language Interpretation Recognition Interface.  This app is built on Node JS and provides a command line interface where the user can input " +
     "commands to retrieve data of interest from different information sources. Currently LIRI supports Twitter, Spotify and IMDB. It also accepts a script file " +
     "to read commands from. All program input and output is kept in a log file.");
 
+details.set("HangmanCli",
+    "This is a reinterpretation of the classic word guess game Hangman.  The app uses NodeJs, Inquirer and an approach based on constructor functions to implement the game engine." +
+    "This is a command line interface app");
+
+details.set("bamazon",
+    "Shop storefront built with NodeJs + MySQL" +
+    "This is a CLI application that offers the following functionalities: " +
+    "--Customer View: Buy Product " +
+    "--Manager View: View products for Sale, View Low Inventory, Add to Inventory, Add New Product " +
+    "--Supervisor View: View Product Sales by Department, Create New Department");
+
+details.set("friendfinder",
+    "Friend Finder is a compatibility-based social friendship application. This full-stack site will take in results from users' surveys, " +
+    "then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match.");
+
+details.set("burguer",
+    "Burguer is a logger app built with MySQL, Node, Express, Handlebars and a homemade ORM. " +
+    "The application follows the MVC design pattern.");
+
+details.set("burguer2",
+    "Burguer 2 - The Sequel uses Sequilize as ORM instead of a custom-made one. The application follows the MVC design pattern.");
 
 let technologies = new Map();
 technologies.set("tickitNGo", ["html", "css", "javascript", "jQuery", "firebaseDB", "firebaseAu", "firebaseUi", "sweetAlert", "googleMaps", "fontAwesome"]);
@@ -40,6 +61,11 @@ technologies.set("trivia", ["html", "css", "javascript", "jQuery", "fontAwesome"
 technologies.set("giftastic", ["html", "css", "javascript", "jQuery"]);
 technologies.set("rps", ["html", "css", "javascript", "jQuery", "firebaseDB"]);
 technologies.set("liri", ["nodeJs"]);
+technologies.set("HangmanCli", ["nodeJs", "javascript"]);
+technologies.set("bamazon", ["nodeJs", "javascript", "mysql"]);
+technologies.set("friendfinder", ["nodeJs", "javascript", "express"]);
+technologies.set("burguer", ["nodeJs", "javascript", "express", "mysql", "handlebars"]);
+technologies.set("burguer2", ["nodeJs", "javascript", "express", "mysql", "handlebars", "sequelize"]);
 
 
 let source = new Map();
@@ -50,6 +76,11 @@ source.set("trivia", ["https://github.com/b4ruch/TriviaGame", "https://b4ruch.gi
 source.set("giftastic", ["https://github.com/b4ruch/GifTastic", "https://b4ruch.github.io/GifTastic/"]);
 source.set("rps", ["https://github.com/b4ruch/RPS-Multiplayer", "https://b4ruch.github.io/RPS-Multiplayer/"]);
 source.set("liri", ["https://github.com/b4ruch/liri-node-app", "https://github.com/b4ruch/liri-node-app"]);
+source.set("HangmanCli", ["https://github.com/b4ruch/HangmanCLI", "https://github.com/b4ruch/HangmanCLI"]);
+source.set("bamazon", ["https://github.com/b4ruch/bamazon", "https://github.com/b4ruch/bamazon"]);
+source.set("friendfinder", ["https://github.com/b4ruch/Friend-Finder", "https://friend-finder-b4.herokuapp.com/"]);
+source.set("burguer", ["https://github.com/b4ruch/burger", "https://friend-finder-b4.herokuapp.com/"]);
+source.set("burguer2", ["https://github.com/b4ruch/burger", "https://friend-finder-b4.herokuapp.com/"]);
 
 
 let icons = new Map();
@@ -64,9 +95,12 @@ icons.set("sweetAlert", "<img class='mt-1 ico' src='assets/images/sweetAlert.png
 icons.set("googleMaps", "<img class='mt-1 ico' src='assets/images/googleMaps.png' alt='Google Maps' title='Google Maps'>");
 icons.set("fontAwesome", "<img class='mt-1 ico' src='assets/images/fontAwesome.png' alt='Font Awesome' title='Font Awesome'>");
 icons.set("nodeJs", "<img class='mt-1 ico' src='assets/images/nodeJs.png' alt='Node JS' title='Node JS'>");
+icons.set("mysql", "<img class='mt-1 ico' src='assets/images/mysql.png' alt='MySQL' title='MySQL'>");
+icons.set("express", "<img class='mt-1 ico' src='assets/images/express.png' alt='Express' title='Express'>");
+icons.set("handlebars", "<img class='mt-1 ico' src='assets/images/handlebars.png' alt='Handlebars' title='Handlebars'>");
+icons.set("sequelize", "<img class='mt-1 ico' src='assets/images/sequelize.png' alt='Sequelize' title='Sequelize'>");
 
 let projectInfoFlag = false; //toggles project info section just once
-
 
 function printSource(ele) {
     let src = source.get(ele.attr("id"))[0];
@@ -81,7 +115,7 @@ function printTechnologies(ele) {
     let tech = technologies.get(ele.attr("id"));
     tech.forEach(technology => {
         $("#projectTechnologies").append(icons.get(technology));
-        debugger;
+        // debugger;
     });
 }
 
