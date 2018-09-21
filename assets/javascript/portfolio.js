@@ -51,7 +51,11 @@ details.set("burguer",
     "The application follows the MVC design pattern.");
 
 details.set("burguer2",
-    "Burguer 2 - The Sequel uses Sequilize as ORM instead of a custom-made one. The application follows the MVC design pattern.");
+    "Burguer 2 The Sequel, uses Sequilize as ORM instead of a custom-made one. The application follows the MVC design pattern.");
+
+details.set("friendify",
+    "Friendify is made to enable social connections wherever you go.  While traveling around the world, you can connect to travelmates that share the same interests." +
+    "The application is built using the MVC approach and uses technologies such as NodeJs, Express, MySQL, Sequelize, Handlebars, Google Geolocation among others.");
 
 let technologies = new Map();
 technologies.set("tickitNGo", ["html", "css", "javascript", "jQuery", "firebaseDB", "firebaseAu", "firebaseUi", "sweetAlert", "googleMaps", "fontAwesome"]);
@@ -66,6 +70,7 @@ technologies.set("bamazon", ["nodeJs", "javascript", "mysql"]);
 technologies.set("friendfinder", ["nodeJs", "javascript", "express"]);
 technologies.set("burguer", ["nodeJs", "javascript", "express", "mysql", "handlebars"]);
 technologies.set("burguer2", ["nodeJs", "javascript", "express", "mysql", "handlebars", "sequelize"]);
+technologies.set("friendify", ["nodeJs", "javascript", "express", "mysql", "handlebars", "sequelize", "google maps"]);
 
 
 let source = new Map();
@@ -81,6 +86,7 @@ source.set("bamazon", ["https://github.com/b4ruch/bamazon", "https://github.com/
 source.set("friendfinder", ["https://github.com/b4ruch/Friend-Finder", "https://friend-finder-b4.herokuapp.com/"]);
 source.set("burguer", ["https://github.com/b4ruch/burger", "https://friend-finder-b4.herokuapp.com/"]);
 source.set("burguer2", ["https://github.com/b4ruch/burger", "https://friend-finder-b4.herokuapp.com/"]);
+source.set("friendify", ["https://github.com/LazyLoaders/Project2", "https://serene-atoll-41113.herokuapp.com/"]);
 
 
 let icons = new Map();
@@ -99,6 +105,7 @@ icons.set("mysql", "<img class='mt-1 ico' src='assets/images/mysql.png' alt='MyS
 icons.set("express", "<img class='mt-1 ico' src='assets/images/express.png' alt='Express' title='Express'>");
 icons.set("handlebars", "<img class='mt-1 ico' src='assets/images/handlebars.png' alt='Handlebars' title='Handlebars'>");
 icons.set("sequelize", "<img class='mt-1 ico' src='assets/images/sequelize.png' alt='Sequelize' title='Sequelize'>");
+icons.set("google maps", "<img class='mt-1 ico' src='assets/images/google_maps.png' alt='Google Maps API' title='Google Maps API'>");
 
 let projectInfoFlag = false; //toggles project info section just once
 
